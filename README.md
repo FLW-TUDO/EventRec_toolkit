@@ -7,24 +7,15 @@ This repositories contain various funcionalities:
 
 ## Requirments
 [e2calib package](https://github.com/uzh-rpg/e2calib) needs to be installed first to be able to
-reconstruct the events to normal frame images. The scripts "convert.py" and "offline_reconstruction.py" will be used.
+reconstruct the events to grey scale images. The scripts "convert.py" and "offline_reconstruction.py" will be used.
 Install the package in directory:
 
      cd ~/event_camera/
 
-Also [Kalibr toolbox](https://github.com/ethz-asl/kalibr) needs be installed. install kalibr in workspace directory "~/kalibr_workspace"
-and don't the sourcing to the .bashrc. Just source its workspace before using it using this command:
+Install [Kalibr toolbox](https://github.com/ethz-asl/kalibr). Create a workspace "~/kalibr_workspace"
+Source its workspace:
 
      source ~/kalibr_workspace/devel/setup.bash
-
-Also install uslam in this workspace directory "~/uslam_ws". Add the workspace sourcing in the .bashrc as usual for ROS.
-https://github.com/uzh-rpg/rpg_ultimate_slam_open/tree/main
-
-All calibration data will be saved in 
-
-     cd ~/event_camera/calibration_data
-
-Install in a workspace and make sure the workspace is sourced
 
 If using ids camera, then instal ids camera driver as mentioned in:
 
@@ -32,7 +23,7 @@ https://github.com/FLW-TUDO/ids_camera_driver
 
 ## event camera calibration
 
-Launch one RGb and two event cameras with ROS from a launch file in this package:
+Launch one RGB and two event cameras with ROS from a launch file in this package:
 
      roslaunch RGB_event_cam_stereo.launch.launch
 
