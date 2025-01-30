@@ -1,6 +1,9 @@
 # EventRec_toolkit
-This is a ROS package containing launch files, calibration and documentation
-for executing algorithms using one RGB camera and 2 event camera setup.
+This repositories contain various funcionalities:
+1. How to do an intrinsic and extrinsic calibration of a camera system consisting of two event cameras and one RGB camera.
+2. Eye-To-Hand calibration of the camera system with a vicon camera. This is esential in order to track objects using vicon camera. Subsequently transforming their positions to the camera system. Thereby, enabling one to get the ground truth in all camera frames. 
+3. Computing translation and angular velocity of objects being tracked by Vicon.
+4. Anootaion scripts
 
 ## Requirments
 [e2calib package](https://github.com/uzh-rpg/e2calib) needs to be installed first to be able to
